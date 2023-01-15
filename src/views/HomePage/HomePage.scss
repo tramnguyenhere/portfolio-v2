@@ -1,0 +1,13 @@
+@import '../../assets/styles/global.scss';
+
+.homepage__container {
+    overflow: hidden;
+    height: calc(100vh - 100px);
+    
+    .homepage-img-1 {
+        img {
+            height: calc(100vh - 100px);
+            border-right: 2px solid $--theme-ui-color-black;
+        }
+    }
+}

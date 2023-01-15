@@ -1,0 +1,40 @@
+@import '../../assets/styles/global.scss';
+
+.brand-logo {
+    font-size: 70px;
+    font-family: $--theme-ui-font-garamond;
+    padding: 0 30px;
+    text-decoration: none;
+    color: $--theme-ui-color-black;
+    width: 50px;
+    position: relative;
+
+    #n {
+        font-style: italic;
+    }
+
+    &::after{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: $--theme-transitiion;
+      }
+
+    &:hover {
+        &::after {
+            content: 'home';
+            color: $--theme-ui-color-red;
+            font-style: italic;
+            position: absolute;
+            left: 110px;
+            top: 2px;
+            display: block;
+            width: 10px;
+            height: 10px;
+            width: 100%;
+        }
+    }
+}

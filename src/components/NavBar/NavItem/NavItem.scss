@@ -1,0 +1,40 @@
+@import '../../../assets/styles/global.scss';
+
+.nav-item {
+    font-size: 30px;
+    font-family: $--theme-ui-font-cabin;
+    text-decoration: none;
+    padding: 0 30px;
+    color: $--theme-ui-color-black;
+    transition: $--theme-transitiion;
+
+    &::before{
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        transition: $--theme-transitiion;
+      }
+
+    &:hover {
+        font-style: italic;
+        color: $--theme-ui-color-red;
+        position: relative;
+
+        &::before {
+            content: '';
+            position: absolute;
+            left: -5%;
+            top: 50%;
+            display: block;
+            border-left: 4px solid $--theme-ui-color-black;
+            border-top: 4px solid $--theme-ui-color-black;
+            width: 10px;
+            height: 10px;
+            float: right;
+            transform: translate(50%, -50%) rotate(135deg);
+        }
+    }
+}

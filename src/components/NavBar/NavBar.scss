@@ -1,0 +1,9 @@
+@import '../../assets/styles/global.scss';
+
+.nav-bar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    border-bottom: 2px solid $--theme-ui-color-black;
+    height: 100px;
+}
