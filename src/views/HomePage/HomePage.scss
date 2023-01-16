@@ -3,11 +3,109 @@
 .homepage__container {
     overflow: hidden;
     height: calc(100vh - 100px);
-    
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
     .homepage-img-1 {
+        border-right: 2px solid $--theme-ui-color-black;
+        width: fit-content;
+
         img {
             height: calc(100vh - 100px);
-            border-right: 2px solid $--theme-ui-color-black;
         }
     }
+    .homepage-img-3 {
+        border-left: 2px solid $--theme-ui-color-black;
+        width: fit-content;
+
+        img {
+            height: calc(100vh - 100px);
+        }
+    }
+    
+    .homepage-img-2 {
+        border-right: 2px solid $--theme-ui-color-black;
+        border-left: 2px solid $--theme-ui-color-black;
+        width: fit-content;
+        margin-left: 70px;
+        
+        img {
+            margin-top: 100px;
+            height: calc(100vh - 400px);
+            border-top: 2px solid $--theme-ui-color-black;
+            border-bottom: 2px solid $--theme-ui-color-black;
+        }
+    }
+    
+    .homepage-img-3 {
+        border-left: 2px solid $--theme-ui-color-black;
+
+        img {
+            height: calc(100vh - 100px);
+        }
+    }
+
+    .homepage-circle {
+        position: absolute;
+        width: 253px;
+        height: 253px;
+        top: 60%;
+        left: 20%;
+        z-index: -1;
+        border-radius: 50%;
+        background: $--theme-ui-color-red;
+    }
+
+    .homepage-text__wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        padding-left: 30px;
+        padding-right: 30px;
+
+        .homepage-text__name {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            
+            .name {
+                font-family: $--theme-ui-font-garamond;
+                font-size: 120px;
+                line-height: 100px;
+            }
+    
+            .title {
+                font-family: $--theme-ui-font-cabin;
+                font-size: 20px;
+                margin-top: 70px;
+                position: relative;
+    
+                &::before {
+                    position: absolute;
+                    content: '';
+                    width: 5px;
+                    height: 5px;
+                    background: $--theme-ui-color-black;
+                    border-radius: 50%;
+                    top: 50%;
+                    left: -10%;
+                }
+            }
+        }
+    
+        .homepage-text__intro {
+            width: 80%;
+            font-family: $--theme-ui-font-garamond;
+            font-size: 30px;
+            font-style: italic;
+            padding-top: 100px;
+            
+        }
+
+        .homepage-text__btn {
+           text-align: right;
+        }
+    }
+
 }

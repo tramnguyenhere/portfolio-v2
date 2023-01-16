@@ -1,0 +1,16 @@
+@import '../../assets/styles/global.scss';
+
+.btn {
+    font-family: $--theme-ui-font-cabin;
+    background: $--theme-ui-color-white;
+    padding: 5px 25px;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: $--theme-transitiion;
+    font-size: 27px;
+
+    &:hover {
+        background: $--theme-ui-color-red;
+        color: $--theme-ui-color-white;
+    }
+}
