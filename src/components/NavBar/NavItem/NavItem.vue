@@ -1,5 +1,5 @@
 <template>
-  <router-link :to='`/${navItem.link}`' class="nav-item" :key="navItem.id" v-for="navItem in navData">
+  <router-link :to='navItem.link' class="nav-item" :key="navItem.id" v-for="navItem in navData">
     {{navItem.name}}
   </router-link>
 </template>

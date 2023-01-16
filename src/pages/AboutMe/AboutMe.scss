@@ -1,0 +1,30 @@
+@import '../../assets/styles/global.scss';
+
+.about__container {
+    background-color: $--theme-ui-color-beige;
+    overflow-x: hidden;
+    .about__title {
+        padding-left: 30px;
+        padding-right: 30px;
+        width: 50%;
+        font-size: 50px;
+        line-height: 80px;
+        font-family: $--theme-ui-font-garamond;
+        background: $--theme-ui-color-white;
+        border-bottom: $--theme-borderline;
+        border-right: $--theme-borderline;
+    }
+    .about-main__wrapper {
+        width: 100%;
+        padding-top: 20px;
+        border-left: $--theme-borderline;
+        margin-left: 30px;
+        .about__img {
+            width: 20%;
+            img {
+                width: 100%;
+                border-top: $--theme-borderline;
+            }
+        }
+    }
+}
