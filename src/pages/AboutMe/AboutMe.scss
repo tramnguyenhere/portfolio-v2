@@ -3,27 +3,76 @@
 .about__container {
     background-color: $--theme-ui-color-beige;
     overflow-x: hidden;
+    height: calc(100vh - 100px);
+
     .about__title {
         padding-left: 30px;
         padding-right: 30px;
-        width: 50%;
+        width: fit-content;
         font-size: 50px;
         line-height: 80px;
         font-family: $--theme-ui-font-garamond;
         background: $--theme-ui-color-white;
-        border-bottom: $--theme-borderline;
         border-right: $--theme-borderline;
     }
+    
     .about-main__wrapper {
         width: 100%;
-        padding-top: 20px;
-        border-left: $--theme-borderline;
-        margin-left: 30px;
+        border-bottom: $--theme-borderline;
+        border-top: $--theme-borderline;
+        padding-left: 100px;
+        display: flex;
+        font-family: $--theme-ui-font-cabin;
+
         .about__img {
             width: 20%;
+            height: 100%;
+            padding: 40px 0 100px;
+            z-index: 2;
+            border-left: $--theme-borderline;
+            position: relative;
+            
+            &::before {
+                position: absolute;
+                content: '';
+                width: 100px;
+                height: 100px;
+                z-index: -1;
+                bottom: 10%;
+                right: -10%;
+                border-radius: 50%;
+                background: $--theme-ui-color-red;
+            }
             img {
                 width: 100%;
                 border-top: $--theme-borderline;
+                border-bottom: $--theme-borderline;
+
+            }
+        }
+
+        .about__intro {
+            z-index: 2;
+            width: 65%;
+            padding: 0 30px;
+            border-left: $--theme-borderline;
+            font-size: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: right;
+
+            span {
+                margin-top: 10px;
+
+                .about--tech-stack {
+                    color: $--theme-ui-color-red;
+                    font-weight: 500;
+                }
+            }
+
+            .about__resume {
+                padding-top: 30px;
             }
         }
     }
