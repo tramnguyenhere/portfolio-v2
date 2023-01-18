@@ -8,6 +8,9 @@
     cursor: pointer;
     transition: $--theme-transitiion;
     font-size: 27px;
+    border: 2px solid $--theme-ui-color-black;
+    text-decoration: none;
+    color: $--theme-ui-color-black;
 
     &:hover {
         background: $--theme-ui-color-red;

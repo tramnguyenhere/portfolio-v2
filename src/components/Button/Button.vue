@@ -1,7 +1,7 @@
 <template>
-  <button class="btn">
+  <a class="btn" :href='href'>
     {{ btnName }}
-  </button>
+  </a>
 </template>
 
 <script>
@@ -9,7 +9,8 @@ import './Button.scss'
 export default {
     name: 'ButtonComp',
     props: {
-        btnName: String
+      btnName: String,
+      href: String
     }
 }
 </script>

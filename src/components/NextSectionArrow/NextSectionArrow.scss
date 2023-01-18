@@ -1,0 +1,24 @@
+@import '../../assets/styles/global.scss';
+
+.next-section__arrow {
+    text-align: center;
+    height: 100%;
+    padding: 10px 0;
+    transform: scale(1);
+    animation: pulse 2s infinite;
+
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.95);
+    }
+
+    70% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}

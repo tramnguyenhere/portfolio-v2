@@ -1,0 +1,12 @@
+@import '../../assets/styles/global.scss';
+
+.headline {
+    padding: 0 30px;
+    width: fit-content;
+    font-size: 50px;
+    line-height: 80px;
+    font-family: $--theme-ui-font-garamond;
+    background: $--theme-ui-color-white;
+    border-style: solid;
+    border-color: $--theme-ui-color-black;
+}
