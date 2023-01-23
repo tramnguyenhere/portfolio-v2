@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
-const technicalSkills = {
+export const technicalSkills = {
   frontend: [
     {
       id: uuid(),
@@ -16,7 +16,16 @@ const technicalSkills = {
       id: uuid(),
       code: 'ts',
       name: 'TypeScript',
-      type: 'PL',
+    },
+    {
+      id: uuid(),
+      code: 'reactjs',
+      name: 'React.js',
+    },
+    {
+      id: uuid(),
+      code: 'vuejs',
+      name: 'Vue.js',
     },
     {
       id: uuid(),
@@ -28,41 +37,27 @@ const technicalSkills = {
       code: 'sass',
       name: 'SASS',
     },
+    {
+      id: uuid(),
+      code: 'bootstrap',
+      name: 'Bootstrap',
+    },
+  ],
+  backend: [
+    {
+      id: uuid(),
+      code: 'expressjs',
+      name: 'Express.js',
+    },
+    {
+      id: uuid(),
+      code: 'nodejs',
+      name: 'Node.js',
+    },
+    {
+      id: uuid(),
+      code: 'mongodb',
+      name: 'MongoDB',
+    },
   ],
 };
-
-const others = [
-  {
-    id: uuid(),
-    code: 'reactjs',
-    name: 'ReactJs',
-    type: 'library',
-  },
-  {
-    id: uuid(),
-    code: 'nodejs',
-    name: 'NodeJs',
-    type: 'library',
-  },
-  {
-    id: uuid(),
-    code: 'redux',
-    name: 'Redux',
-    type: 'library',
-  },
-  {
-    id: uuid(),
-    code: 'mongodb',
-    name: 'MongoDB',
-    type: 'others',
-  },
-  { id: uuid(), code: 'github', name: 'Github', type: 'others' },
-  {
-    id: uuid(),
-    code: 'figma',
-    name: 'Figma',
-    type: 'others',
-  },
-];
-
-export { programmingLanguage, others };

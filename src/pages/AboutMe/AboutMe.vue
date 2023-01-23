@@ -35,6 +35,7 @@
 
 <script>
 import { aboutmeData } from '@/data/aboutmeData';
+import technicalskillsData from '@/data/technicalskillsData'
 import NextSectionArrow from '@/components/NextSectionArrow/NextSectionArrow.vue';
 import NavBar from '@/components/NavBar/NavBar.vue';
 import Headline from '@/components/Headline/Headline.vue';
@@ -50,7 +51,8 @@ export default {
     },
     data () {
         return {
-        aboutmeData
+            aboutmeData,
+            technicalskillsData
     }
    }
 }
