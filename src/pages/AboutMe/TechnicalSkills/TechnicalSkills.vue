@@ -1,0 +1,38 @@
+<template>
+    <div class="about-details__tech">
+        <div class="details-tech__wrapper" id="details-tech--frontend">
+            <span>frontend development</span>
+            <div class="details-tech__list">
+                <span class="details-tech__item" v-for="skill in technicalSkills.frontend" :key="skill.id" >
+                    <img :src="`img/techstack/fe-${skill.code}.png`">
+                    {{ skill.name }}
+                </span>
+            </div>
+        </div>
+        <div class="details-tech__wrapper" id="details-tech--backend">
+            <span>backend development</span>
+            <div class="details-tech__list">
+                <span class="details-tech__item" v-for="skill in technicalSkills.backend" :key="skill.id" >
+                    <img :src="`img/techstack/be-${skill.code}.png`">
+                    {{ skill.name }}
+                </span>
+            </div>
+        </div>
+       
+    </div>
+
+</template>
+
+<script>
+import { technicalSkills } from '@/data/technicalskillsData'
+import './TechnicalSkills.scss'
+
+export default {
+    name: 'TechnicalSkills',
+    data () {
+        return {
+            technicalSkills
+        }
+    }
+}
+</script>

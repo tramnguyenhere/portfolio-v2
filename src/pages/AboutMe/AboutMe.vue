@@ -18,24 +18,14 @@
         <NextSectionArrow idPage="#about__details"/>
         <div id="about__details">
             <Headline borderValue="0 0 0 2px" :headlineContent="aboutmeData.headline.detailSectionTitle.text"/>
-            <div class="about-details__tech">
-                <div class="details-tech__frontend">
-                    
-                </div>
-                <div class="details-tech__backend">
-
-                </div>
-                <div class="details-tech__others">
-
-                </div>
-            </div>
+            <TechnicalSkills />
         </div>
     </div>
 </template>
 
 <script>
 import { aboutmeData } from '@/data/aboutmeData';
-import technicalskillsData from '@/data/technicalskillsData'
+import TechnicalSkills from './TechnicalSkills/TechnicalSkills.vue';
 import NextSectionArrow from '@/components/NextSectionArrow/NextSectionArrow.vue';
 import NavBar from '@/components/NavBar/NavBar.vue';
 import Headline from '@/components/Headline/Headline.vue';
@@ -47,12 +37,12 @@ export default {
         NavBar,
         Button,
         Headline,
-        NextSectionArrow
+        NextSectionArrow,
+        TechnicalSkills
     },
     data () {
         return {
             aboutmeData,
-            technicalskillsData
     }
    }
 }

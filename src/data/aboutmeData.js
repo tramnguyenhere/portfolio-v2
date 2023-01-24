@@ -17,7 +17,7 @@ export const aboutmeData = {
   },
   midPara: {
     id: uuidv4(),
-    text: 'Most of my work is built using HTML, JavaScript, TypeScript, React.js, Vue.js, Node.js, Express, Redux, Vuex, MongoDB, and styled with CSS, SASS, and Bootstrap. I mostly work with frontend, but my goal is to expand my tech stack to include backend within the next 2 years.',
+    text: 'My works are built using HTML, JavaScript, TypeScript, React.js, Vue.js, Node.js, Express, Redux, Vuex, MongoDB, and styled with CSS, SASS, and Bootstrap. I mostly work with frontend, but my goal is to expand my tech stack to include backend within the next 2 years.',
   },
   finalPara: {
     id: uuidv4(),
