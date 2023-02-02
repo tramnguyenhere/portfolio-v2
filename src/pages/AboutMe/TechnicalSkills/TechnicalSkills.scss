@@ -1,17 +1,20 @@
 @import '../../../assets/styles/global.scss';
 
-.about-details__tech {
+.about-details__tech{
+    border-top: $--theme-borderline;
+    font-family: $--theme-ui-font-cabin;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.details-tech__wrapper{
+    display: flex;
+}
+
+.details-tech__list{
 
 }
 
-.details-tech__frontend {
-
-}
-
-.details-tech__backend {
-
-}
-
-.details-tech__others {
+.details-tech__item{
 
 }

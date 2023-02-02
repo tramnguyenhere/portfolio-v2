@@ -17,7 +17,7 @@
         </div>
         <NextSectionArrow idPage="#about__details"/>
         <div id="about__details">
-            <Headline borderValue="0 0 0 2px" :headlineContent="aboutmeData.headline.detailSectionTitle.text"/>
+            <Headline borderValue="0 2px 0 0" :headlineContent="aboutmeData.headline.detailSectionTitle.text"/>
             <TechnicalSkills />
         </div>
     </div>

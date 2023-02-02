@@ -6,7 +6,7 @@ export const homepageData = {
     lastName: 'nguyen',
     title: 'frontend developer',
     subtitle:
-      'sometimes I code, sometimes I wander around, detect the problems, and develop digital solutions.',
+      'sometimes I code, sometimes I read, sometimes I see the problems, and develop digital solutions.',
   },
   decoImgs: [
     {
