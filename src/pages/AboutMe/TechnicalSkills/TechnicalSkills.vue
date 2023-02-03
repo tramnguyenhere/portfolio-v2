@@ -1,7 +1,7 @@
 <template>
     <div class="about-details__tech">
         <div class="details-tech__wrapper" id="details-tech--frontend">
-            <span>frontend development</span>
+            <span class="details-tech__title">frontend development</span>
             <div class="details-tech__list">
                 <span class="details-tech__item" v-for="skill in technicalSkills.frontend" :key="skill.id" >
                     <img :src="`img/techstack/fe-${skill.code}.png`">
@@ -10,25 +10,29 @@
             </div>
         </div>
         <div class="details-tech__wrapper" id="details-tech--backend">
-            <span>backend development</span>
+            <span class="details-tech__title">backend development</span>
             <div class="details-tech__list">
                 <span class="details-tech__item" v-for="skill in technicalSkills.backend" :key="skill.id" >
                     <img :src="`img/techstack/be-${skill.code}.png`">
-                    {{ skill.name }}
+                    <span>{{ skill.name }}</span>
                 </span>
             </div>
         </div>
-       
     </div>
+    <NextSectionArrow idPage="/about" direction="up"/>
 
 </template>
 
 <script>
 import { technicalSkills } from '@/data/technicalskillsData'
+import NextSectionArrow from '../../../components/NextSectionArrow/NextSectionArrow.vue'
 import './TechnicalSkills.scss'
 
 export default {
     name: 'TechnicalSkills',
+    components: {
+        NextSectionArrow
+    },
     data () {
         return {
             technicalSkills

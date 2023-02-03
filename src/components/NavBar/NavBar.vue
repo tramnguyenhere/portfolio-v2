@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-bar__container" :style="{background: color}">
+  <div class="nav-bar__container" :style="{background: color, borderWidth: borderValue}">
     <BrandLogo />
     <div class="nav-bar__link" >
       <NavItem/>
@@ -15,7 +15,8 @@ import './NavBar.scss'
 export default {
   name: 'NavBar',
   props: {
-    color: String
+    color: String,
+    borderValue: String
   },
   components: {
     BrandLogo,

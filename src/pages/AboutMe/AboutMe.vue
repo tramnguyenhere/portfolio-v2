@@ -1,5 +1,5 @@
 <template>
-    <NavBar :color="'#CCBFAF'"/>
+    <NavBar :color="'#CCBFAF'" />
     <div class="about__container">
         <Headline borderValue="0 2px 0 0" :headlineContent="aboutmeData.headline.title.text" />
         <div class="about-main__wrapper">
@@ -15,7 +15,7 @@
                 </div>
             </div>
         </div>
-        <NextSectionArrow idPage="#about__details"/>
+        <NextSectionArrow idPage="/about#about__details" direction="down"/>
         <div id="about__details">
             <Headline borderValue="0 2px 0 0" :headlineContent="aboutmeData.headline.detailSectionTitle.text"/>
             <TechnicalSkills />
