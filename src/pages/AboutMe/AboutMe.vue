@@ -1,30 +1,30 @@
 <template>
     <NavBar :color="'#CCBFAF'" />
     <div class="about__container">
-        <Headline borderValue="0 2px 0 0" :headlineContent="aboutmeData.headline.title.text" />
+        <Headline borderValue="0 2px 0 0" :headlineContent="AboutMePageContent.headline.title.text" />
         <div class="about-main__wrapper">
             <div class="about__img">
-                <img :src="aboutmeData.decoImgs[0].src" :alt="aboutmeData.decoImgs[0].name" >
+                <img :src="AboutMePageContent.decoImgs[0].src" :alt="AboutMePageContent.decoImgs[0].name" >
             </div>
             <div class="about__intro">
-                <span>{{aboutmeData.introPara.text}}</span>
-                <span>{{aboutmeData.midPara.text}}</span> 
-                <span>{{aboutmeData.finalPara.text}}</span>        
+                <span>{{AboutMePageContent.introPara.text}}</span>
+                <span>{{AboutMePageContent.midPara.text}}</span> 
+                <span>{{AboutMePageContent.finalPara.text}}</span>        
                 <div class="about__resume">
-                    <Button :href="aboutmeData.btns[0].link" :btnName="aboutmeData.btns[0].name"/>
+                    <Button :href="AboutMePageContent.btns[0].link" :btnName="AboutMePageContent.btns[0].name"/>
                 </div>
             </div>
         </div>
         <NextSectionArrow idPage="/about#about__details" direction="down"/>
         <div id="about__details">
-            <Headline borderValue="0 2px 0 0" :headlineContent="aboutmeData.headline.detailSectionTitle.text"/>
+            <Headline borderValue="0 2px 0 0" :headlineContent="AboutMePageContent.headline.detailSectionTitle.text"/>
             <TechnicalSkills />
         </div>
     </div>
 </template>
 
 <script>
-import { aboutmeData } from '@/data/aboutmeData';
+import { AboutMePageContent } from '@/data/AboutMePageContent';
 import TechnicalSkills from './TechnicalSkills/TechnicalSkills.vue';
 import NextSectionArrow from '@/components/NextSectionArrow/NextSectionArrow.vue';
 import NavBar from '@/components/NavBar/NavBar.vue';
@@ -42,7 +42,7 @@ export default {
     },
     data () {
         return {
-            aboutmeData,
+            AboutMePageContent,
     }
    }
 }

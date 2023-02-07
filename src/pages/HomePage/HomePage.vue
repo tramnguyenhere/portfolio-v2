@@ -2,35 +2,35 @@
   <NavBar />
   <div class="homepage__container">
     <div class="homepage-img-1">
-      <img :src='homepageData.decoImgs[0].src' :alt="homepageData.decoImgs[0].name"/>
+      <img :src='HomePageContent.DecorativeSection[0].src' :alt="HomePageContent.DecorativeSection[0].name"/>
     </div>
     <div class="homepage-img-2">
-      <img :src='homepageData.decoImgs[1].src' :alt="homepageData.decoImgs[1].name"/>
+      <img :src='HomePageContent.DecorativeSection[1].src' :alt="HomePageContent.DecorativeSection[1].name"/>
     </div>
     <div class="homepage-circle"></div>
     <div class="homepage-text__wrapper">
       <div class="homepage-text__name">
-        <span class="name">{{ homepageData.text.firstName }}</span>
-        <span class="name">{{ homepageData.text.lastName }}</span>
+        <span class="name">{{ HomePageContent.MainSection.AuthorFirstName }}</span>
+        <span class="name">{{ HomePageContent.MainSection.AuthorLastName }}</span>
         <div class="title">
-          {{ homepageData.text.title }}
+          {{ HomePageContent.MainSection.AuthorTitle }}
         </div>
       </div>
       <div class="homepage-text__intro">
-        {{ homepageData.text.subtitle }}
+        {{ HomePageContent.MainSection.AuthorSologan }}
       </div>
       <div class="homepage-text__btn">
         <Button btnName="explore my works"/>
       </div>
     </div>
     <div class="homepage-img-3">
-      <img :src='homepageData.decoImgs[2].src' :alt="homepageData.decoImgs[2].name"/>
+      <img :src='HomePageContent.DecorativeSection[2].src' :alt="HomePageContent.DecorativeSection[2].name"/>
     </div>
   </div>
 </template>
 
 <script>
-import { homepageData } from '@/data/homepageData';
+import { HomePageContent } from '@/data/HomePageContent';
 import NavBar from '@/components/NavBar/NavBar.vue';
 import Button from '@/components/Button/Button.vue';
 import './HomePage.scss'
@@ -43,7 +43,7 @@ export default {
   },
   data () {
     return {
-        homepageData
+        HomePageContent
       }
     }
 

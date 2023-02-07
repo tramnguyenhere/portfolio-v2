@@ -1,18 +1,18 @@
 <template>
-  <router-link :to='navItem.link' class="nav-item" :key="navItem.id" v-for="navItem in navData">
+  <router-link :to='navItem.link' class="nav-item" :key="navItem.id" v-for="navItem in NavigationBarElements">
     {{navItem.name}}
   </router-link>
 </template>
 
 <script>
-import { navData } from '@/data/navData';
+import { NavigationBarElements } from '@/data/NavigationBarElements';
 import './NavItem.scss'
 
 export default {
-  name: 'NavBar',
+  name: 'NavigationBar',
   data () {
     return {
-      navData
+      NavigationBarElements
     }
   }
 }
