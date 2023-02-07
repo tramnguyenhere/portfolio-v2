@@ -3,7 +3,7 @@
         <div class="details-tech__wrapper" id="details-tech--frontend">
             <span class="details-tech__title">frontend development</span>
             <div class="details-tech__list">
-                <span class="details-tech__item" v-for="skill in TechnicalSkillGroups.frontend" :key="skill.id" >
+                <span class="details-tech__item" v-for="skill in aboutMePageElements.technicalSkillGroups.frontendTechStack" :key="skill.id" >
                     <img :src="`img/techstack/fe-${skill.code}.png`">
                     {{ skill.name }}
                 </span>
@@ -12,7 +12,7 @@
         <div class="details-tech__wrapper" id="details-tech--backend">
             <span class="details-tech__title">backend development</span>
             <div class="details-tech__list">
-                <span class="details-tech__item" v-for="skill in TechnicalSkillGroups.backend" :key="skill.id" >
+                <span class="details-tech__item" v-for="skill in aboutMePageElements.technicalSkillGroups.backendTechStack" :key="skill.id" >
                     <img :src="`img/techstack/be-${skill.code}.png`">
                     <span>{{ skill.name }}</span>
                 </span>
@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { TechnicalSkillGroups } from '@/data/TechnicalSkillGroups'
+import { aboutMePageElements } from '@/data/AboutMePageElements'
 import NextSectionArrow from '../../../components/NextSectionArrow/NextSectionArrow.vue'
 import './TechnicalSkills.scss'
 
@@ -35,7 +35,7 @@ export default {
     },
     data () {
         return {
-            TechnicalSkillGroups
+            aboutMePageElements
         }
     }
 }

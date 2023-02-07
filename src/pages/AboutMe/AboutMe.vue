@@ -1,30 +1,30 @@
 <template>
     <NavBar :color="'#CCBFAF'" />
     <div class="about__container">
-        <Headline borderValue="0 2px 0 0" :headlineContent="AboutMePageContent.headline.title.text" />
+        <Headline borderValue="0 2px 0 0" :headlineContent="aboutMePageElements.headlines.aboutMeSectionHeadline.content" />
         <div class="about-main__wrapper">
             <div class="about__img">
-                <img :src="AboutMePageContent.decoImgs[0].src" :alt="AboutMePageContent.decoImgs[0].name" >
+                <img :src="aboutMePageElements.decorativeImages[0].imageSource" :alt="aboutMePageElements.decorativeImages[0].imageName" >
             </div>
             <div class="about__intro">
-                <span>{{AboutMePageContent.introPara.text}}</span>
-                <span>{{AboutMePageContent.midPara.text}}</span> 
-                <span>{{AboutMePageContent.finalPara.text}}</span>        
+                <span>{{aboutMePageElements.personalInformation.careerObjective.content}}</span>
+                <span>{{aboutMePageElements.personalInformation.overallTechnicalSkills.content}}</span> 
+                <span>{{aboutMePageElements.personalInformation.callToAction.content}}</span>        
                 <div class="about__resume">
-                    <Button :href="AboutMePageContent.btns[0].link" :btnName="AboutMePageContent.btns[0].name"/>
+                    <Button :href="aboutMePageElements.buttons[0].buttonLink" :btnName="aboutMePageElements.buttons[0].buttonName"/>
                 </div>
             </div>
         </div>
         <NextSectionArrow idPage="/about#about__details" direction="down"/>
         <div id="about__details">
-            <Headline borderValue="0 2px 0 0" :headlineContent="AboutMePageContent.headline.detailSectionTitle.text"/>
+            <Headline borderValue="0 2px 0 0" :headlineContent="aboutMePageElements.headlines.technicalSectionHeadline.content"/>
             <TechnicalSkills />
         </div>
     </div>
 </template>
 
 <script>
-import { AboutMePageContent } from '@/data/AboutMePageContent';
+import { aboutMePageElements } from '@/data/AboutMePageElements';
 import TechnicalSkills from './TechnicalSkills/TechnicalSkills.vue';
 import NextSectionArrow from '@/components/NextSectionArrow/NextSectionArrow.vue';
 import NavBar from '@/components/NavBar/NavBar.vue';
@@ -42,7 +42,7 @@ export default {
     },
     data () {
         return {
-            AboutMePageContent,
+            aboutMePageElements,
     }
    }
 }

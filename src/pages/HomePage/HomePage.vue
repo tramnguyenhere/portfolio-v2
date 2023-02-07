@@ -2,35 +2,35 @@
   <NavBar />
   <div class="homepage__container">
     <div class="homepage-img-1">
-      <img :src='homePageContent.decorativeElements[0].imageSource' :alt="homePageContent.decorativeElements[0].imageName"/>
+      <img :src='homePageElements.decorativeElements[0].imageSource' :alt="homePageElements.decorativeElements[0].imageName"/>
     </div>
     <div class="homepage-img-2">
-      <img :src='homePageContent.decorativeElements[1].imageSource' :alt="homePageContent.decorativeElements[1].imageName"/>
+      <img :src='homePageElements.decorativeElements[1].imageSource' :alt="homePageElements.decorativeElements[1].imageName"/>
     </div>
     <div class="homepage-circle"></div>
     <div class="homepage-text__wrapper">
       <div class="homepage-text__name">
-        <span class="name">{{ homePageContent.authorOverallInfo.firstName }}</span>
-        <span class="name">{{ homePageContent.authorOverallInfo.lastName }}</span>
+        <span class="name">{{ homePageElements.authorOverallInfo.firstName }}</span>
+        <span class="name">{{ homePageElements.authorOverallInfo.lastName }}</span>
         <div class="title">
-          {{ homePageContent.authorOverallInfo.title }}
+          {{ homePageElements.authorOverallInfo.title }}
         </div>
       </div>
       <div class="homepage-text__intro">
-        {{ homePageContent.authorOverallInfo.slogan }}
+        {{ homePageElements.authorOverallInfo.slogan }}
       </div>
       <div class="homepage-text__btn">
         <Button btnName="explore my works"/>
       </div>
     </div>
     <div class="homepage-img-3">
-      <img :src='homePageContent.decorativeElements[2].imageSource' :alt="homePageContent.decorativeElements[2].imageName"/>
+      <img :src='homePageElements.decorativeElements[2].imageSource' :alt="homePageElements.decorativeElements[2].imageName"/>
     </div>
   </div>
 </template>
 
 <script>
-import { homePageContent } from '@/data/HomePageContent';
+import { homePageElements } from '@/data/HomePageElements';
 import NavBar from '@/components/NavBar/NavBar.vue';
 import Button from '@/components/Button/Button.vue';
 import './HomePage.scss'
@@ -43,7 +43,7 @@ export default {
   },
   data () {
     return {
-        homePageContent
+        homePageElements
       }
     }
 

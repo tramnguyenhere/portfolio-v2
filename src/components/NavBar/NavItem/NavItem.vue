@@ -1,6 +1,6 @@
 <template>
-  <router-link :to='navItem.link' class="nav-item" :key="navItem.id" v-for="navItem in NavigationBarElements">
-    {{navItem.name}}
+  <router-link :to='navigationItem.navigationItemLink' class="nav-item" :key="navigationItem.id" v-for="navigationItem in NavigationBarElements">
+    {{navigationItem.navigationItemName}}
   </router-link>
 </template>
 
