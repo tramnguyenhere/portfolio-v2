@@ -39,12 +39,12 @@ export const aboutMePageElements = {
       },
       {
         id: uuidv4(),
-        code: 'js',
+        code: 'javacript',
         name: 'JavaScript',
       },
       {
         id: uuidv4(),
-        code: 'ts',
+        code: 'typescript',
         name: 'TypeScript',
       },
       {

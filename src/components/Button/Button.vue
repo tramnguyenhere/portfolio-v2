@@ -7,10 +7,12 @@
 <script>
 import './Button.scss'
 export default {
-    name: 'ButtonComp',
+    name: 'Button',
     props: {
       btnName: String,
-      href: String
+      href: String,
+      paddingValue: String,
+      fontSizeValue: String
     }
 }
 </script>

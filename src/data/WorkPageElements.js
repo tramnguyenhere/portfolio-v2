@@ -10,7 +10,7 @@ const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/working_background-app.git',
       projectDemoLink: 'https://aspace-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['ts', 'reactjs', 'redux', 'sass'],
+      technologiesUsed: ['typescript', 'reactjs', 'redux', 'sass'],
     },
     {
       id: uuidv4(),
@@ -20,7 +20,7 @@ const workPageElements = {
       projectSourceCode: 'https://github.com/tramnguyenhere/wishlist-app.git',
       projectDemoLink: 'https://wishlist-application-tramnguyenhere.fly.dev/',
       technologiesUsed: [
-        'js',
+        'javascript',
         'reactjs',
         'redux',
         'sass',
@@ -37,7 +37,7 @@ const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/tramnguyenhere-porfolio',
       projectDemoLink: 'https://tramnguyenhere-portfolio.netlify.app/',
-      technologiesUsed: ['js', 'reactjs', 'sass', 'figma'],
+      technologiesUsed: ['javascript', 'reactjs', 'sass', 'figma'],
     },
     {
       id: uuidv4(),
@@ -47,7 +47,7 @@ const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/ingredient-measurement-converter.git',
       projectDemoLink: 'https://ingredientmeasurementconverter.netlify.app/',
-      technologiesUsed: ['js', 'reactjs', 'sass', 'bootstrap'],
+      technologiesUsed: ['javascript', 'reactjs', 'sass', 'bootstrap'],
     },
 
     {
@@ -59,7 +59,7 @@ const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/english-dictionary-react.git',
       projectDemoLink: 'https://english-dictionary-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['js', 'reactjs', 'css'],
+      technologiesUsed: ['javascript', 'reactjs', 'css'],
     },
     {
       id: uuidv4(),
@@ -70,7 +70,7 @@ const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/cooking-recipe-app-react.git',
       projectDemoLink: 'https://cooking-recipe-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['js', 'reactjs', 'css', 'styledcomponent'],
+      technologiesUsed: ['javascript', 'reactjs', 'css', 'styledcomponent'],
     },
   ],
 };
