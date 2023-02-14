@@ -37,7 +37,6 @@
             font-family: $--theme-ui-font-cabin;
             font-size: 20px;
             padding: 10px 0px;
-           
         }
         
         &__technology-list {
@@ -45,9 +44,7 @@
             flex-grow: 1;
             
             .project__technology {
-                
                 position: relative;
-                padding-bottom: 25px;
                 cursor: pointer;
                 
                 &--icon {
