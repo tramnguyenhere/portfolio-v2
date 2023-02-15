@@ -4,16 +4,18 @@
     font-family: $--theme-ui-font-cabin;
     background: $--theme-ui-color-white;
     padding: 5px 25px;
-    border-radius: 100px;
+    // border-radius: 100px;
     cursor: pointer;
     transition: $--theme-transitiion;
     font-size: 27px;
-    border: 2px solid $--theme-ui-color-black;
+    border: $--theme-borderline;
     text-decoration: none;
     color: $--theme-ui-color-black;
+    box-shadow: 3px 3px $--theme-ui-color-black;
 
     &:hover {
         background: $--theme-ui-color-red;
         color: $--theme-ui-color-white;
+        box-shadow: -3px -3px $--theme-ui-color-black;
     }
 }
