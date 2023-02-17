@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
-const workPageElements = {
+
+export const workPageElements = {
   sideProjects: [
     {
       id: uuidv4(),
@@ -74,5 +75,3 @@ const workPageElements = {
     },
   ],
 };
-
-export default workPageElements;

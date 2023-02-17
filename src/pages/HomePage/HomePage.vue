@@ -20,7 +20,7 @@
         {{ homePageElements.authorOverallInfo.slogan }}
       </div>
       <div class="homepage-text__btn">
-        <Button btnName="explore my works"/>
+        <Button btnName="explore my works" :href="'/work'"/>
       </div>
     </div>
     <div class="homepage-img-3">
