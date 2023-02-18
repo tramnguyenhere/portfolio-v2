@@ -3,22 +3,48 @@
 .contact__container {
     background: $--theme-ui-color-beige;
     width: 100%;
-    height: calc(100vh - 102px);
+    height: calc(100vh - 104px);
+    display: flex;
+    justify-content: space-around;
+    overflow-y: hidden;
+    
+    .contact__call-to-action {
+        font-size: 70px;
+        font-family: $--theme-ui-font-cabin;
+        font-weight: 300;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10%;
+
+        img {
+            width: 200px;
+        }
+
+    }
 
     .contact__accounts {
+        position: relative;
         font-family: $--theme-ui-font-cabin;
-        font-style: italic;
-        font-size: 50px;
+        font-size: 100px;
         font-weight: 400;
         display: flex;
         flex-direction: column;
-
+        text-align: right;
+        height:  calc(100vh - 120px);
+        justify-content: flex-end;
+        
         .contact__account {
-
+            padding: 5px;
         }
+
     }
 
     .contact__form {
-
+        display: flex;
+        
+        iframe {
+            width: 700px;
+            height: 100%;
+        }
     }
 }
