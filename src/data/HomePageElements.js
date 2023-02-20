@@ -26,4 +26,11 @@ export const homePageElements = {
       imageSource: 'img/homepage/homepage-3.png',
     },
   ],
+  buttons: [
+    {
+      id: uuidv4(),
+      buttonName: 'explore my works',
+      buttonLink: '/work',
+    },
+  ],
 };

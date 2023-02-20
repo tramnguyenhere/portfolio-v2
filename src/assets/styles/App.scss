@@ -4,6 +4,19 @@ body {
     box-sizing: border-box;
 }
 
+* {
+    animation: fadeIn .5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
 .app {
     max-width: 1728px;
     max-height: 100vh;

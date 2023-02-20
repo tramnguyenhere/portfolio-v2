@@ -1,96 +1,118 @@
 @import '../../assets/styles/global.scss';
 
-.project-list__container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 50px;
-    background-color: $--theme-ui-color-beige;
+.project-list__wrapper {
+    min-height: 100vh;
+    background: $--theme-ui-color-beige;
 
-    .project {
-        border: $--theme-borderline;
-        height: calc( 100% - 40px);
-        object-fit: cover;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
-        padding: 20px;
-        font-family: $--theme-ui-font-garamond;
+    .project-filter {
+        font-size: 40px;
         text-align: center;
-        perspective: 1000px;
-        background-color: $--theme-ui-color-white;
-
-        cursor: pointer;
-
-        &:hover {
-            .project__card {
-                transform: rotateY(180deg);
-            }
+        padding: 30px;
+        font-family: $--theme-ui-font-cabin;
+        border-top: $--theme-borderline;
+    
+        select {
+            font-size: 40px;
+            font-family: $--theme-ui-font-cabin;
+            padding: 5px 10px;
+            border-radius: 10px;
+            background: $--theme-ui-color-red;
+            color: $--theme-ui-color-white;
         }
-       
-        .project__card {   
-            position: relative;
-            transition: transform 0.8s;
-            transform-style: preserve-3d;
+    }
+    
 
-            .project__details {
-                // position: relative;
+    .project-list {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 50px;
+        padding-bottom: 30px;
+    
+        .project {
+            border: $--theme-borderline;
+            height: calc( 100% - 40px);
+            object-fit: cover;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: column;
+            padding: 20px;
+            font-family: $--theme-ui-font-garamond;
+            text-align: center;
+            perspective: 1000px;
+            background-color: $--theme-ui-color-white;
+    
+            cursor: pointer;
+    
+            &:hover {
+                .project__card {
+                    transform: rotateY(180deg);
+                }
+            }
+           
+            .project__card {   
+                position: relative;
                 transition: transform 0.8s;
                 transform-style: preserve-3d;
-                -webkit-backface-visibility: hidden; 
-                backface-visibility: hidden;
-     
-                 .project__thumbnail {
-                     width: calc(100% - 4px);
-                 }
-                 
-                 .project__name {
-                     padding: 10px 20px 0;
-                     font-size: 30px;
-                     font-weight: 500;
-                     text-transform: uppercase;
-                     letter-spacing: 0.4rem;
-                 }
-                 
-                 .project__description {
-                     font-size: 22px;
-                     padding: 10px 0 0;
-                 }
-                 
-                 .project__technology-list {
-                     display: flex;
-                     text-align: center;
-                     justify-content: center;
-                     flex-wrap: wrap;
-                     font-size: 16px;
-                     font-style: italic;
+    
+                .project__details {
+                    transition: transform 0.8s;
+                    transform-style: preserve-3d;
+                    -webkit-backface-visibility: hidden; 
+                    backface-visibility: hidden;
+         
+                     .project__thumbnail {
+                         width: calc(100% - 4px);
+                     }
                      
-                     .project__technology {
-                         padding-right: 10px;
+                     .project__name {
+                         padding: 10px 20px 0;
+                         font-size: 30px;
+                         font-weight: 500;
+                         text-transform: uppercase;
+                         letter-spacing: 0.4rem;
+                     }
+                     
+                     .project__description {
+                         font-size: 22px;
+                         padding: 10px 0 0;
+                     }
+                     
+                     .project__technology-list {
+                         display: flex;
+                         text-align: center;
+                         justify-content: center;
+                         flex-wrap: wrap;
+                         font-size: 16px;
+                         font-style: italic;
+                         
+                         .project__technology {
+                             padding-right: 10px;
+                         }
                      }
                  }
-             }
-        
-             .project__buttons {
-                position: absolute;
-                top: 0;
-                text-align: center;
-                -webkit-backface-visibility: hidden;
-                backface-visibility: hidden;
-                transform: rotateY(180deg);
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                background-color: $--theme-ui-color-beige;
-                height: 100%;
-
-                 .btn {
-                     margin-bottom: 10px;
+            
+                 .project__buttons {
+                    position: absolute;
+                    top: 0;
+                    text-align: center;
+                    -webkit-backface-visibility: hidden;
+                    backface-visibility: hidden;
+                    transform: rotateY(180deg);
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $--theme-ui-color-beige;
+                    height: 100%;
+    
+                     .btn {
+                         margin-bottom: 10px;
+                     }
                  }
-             }
+            }
+            
         }
-        
     }
 }

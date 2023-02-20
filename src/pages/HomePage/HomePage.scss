@@ -15,15 +15,7 @@
             height: calc(100vh - 100px);
         }
     }
-    .homepage-img-3 {
-        border-left: $--theme-borderline;
-        width: fit-content;
 
-        img {
-            height: calc(100vh - 100px);
-        }
-    }
-    
     .homepage-img-2 {
         border-right: $--theme-borderline;
         border-left: $--theme-borderline;
@@ -37,32 +29,22 @@
             border-bottom: $--theme-borderline;
         }
     }
-    
+
     .homepage-img-3 {
         border-left: $--theme-borderline;
+        width: fit-content;
 
         img {
             height: calc(100vh - 100px);
         }
     }
 
-    .homepage-circle {
-        position: absolute;
-        width: 253px;
-        height: 253px;
-        top: 60%;
-        left: 20%;
-        z-index: -1;
-        border-radius: 50%;
-        background: $--theme-ui-color-red;
-    }
-
     .homepage-text__wrapper {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
         width: 30%;
-        padding-left: 30px;
-        padding-right: 30px;
+        padding: 50px 30px;
 
         .homepage-text__name {
             display: flex;

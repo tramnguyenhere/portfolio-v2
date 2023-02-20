@@ -11,7 +11,7 @@ export const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/working_background-app.git',
       projectDemoLink: 'https://aspace-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['typescript', 'reactjs', 'redux', 'sass'],
+      technologiesUsed: ['html', 'typescript', 'reactjs', 'redux', 'sass'],
     },
     {
       id: uuidv4(),
@@ -21,11 +21,13 @@ export const workPageElements = {
       projectSourceCode: 'https://github.com/tramnguyenhere/wishlist-app.git',
       projectDemoLink: 'https://wishlist-application-tramnguyenhere.fly.dev/',
       technologiesUsed: [
+        'html',
         'javascript',
         'reactjs',
         'redux',
         'sass',
         'bootstrap',
+        'nodejs',
         'mongodb',
         'firebase',
       ],
@@ -38,7 +40,7 @@ export const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/tramnguyenhere-porfolio',
       projectDemoLink: 'https://tramnguyenhere-portfolio.netlify.app/',
-      technologiesUsed: ['javascript', 'reactjs', 'sass', 'figma'],
+      technologiesUsed: ['html', 'javascript', 'reactjs', 'sass', 'figma'],
     },
     {
       id: uuidv4(),
@@ -48,7 +50,7 @@ export const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/ingredient-measurement-converter.git',
       projectDemoLink: 'https://ingredientmeasurementconverter.netlify.app/',
-      technologiesUsed: ['javascript', 'reactjs', 'sass', 'bootstrap'],
+      technologiesUsed: ['html', 'javascript', 'reactjs', 'sass', 'bootstrap'],
     },
 
     {
@@ -60,7 +62,7 @@ export const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/english-dictionary-react.git',
       projectDemoLink: 'https://english-dictionary-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['javascript', 'reactjs', 'css'],
+      technologiesUsed: ['html', 'javascript', 'reactjs', 'css'],
     },
     {
       id: uuidv4(),
@@ -71,7 +73,13 @@ export const workPageElements = {
       projectSourceCode:
         'https://github.com/tramnguyenhere/cooking-recipe-app-react.git',
       projectDemoLink: 'https://cooking-recipe-tramnguyenhere.netlify.app/',
-      technologiesUsed: ['javascript', 'reactjs', 'css', 'styledcomponent'],
+      technologiesUsed: [
+        'html',
+        'javascript',
+        'reactjs',
+        'css',
+        'styledcomponent',
+      ],
     },
   ],
 };

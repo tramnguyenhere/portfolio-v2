@@ -1,17 +1,24 @@
-<template class="homepage__container">
+<template>
   <NavBar />
   <div class="homepage__container">
     <div class="homepage-img-1">
-      <img :src='homePageElements.decorativeElements[0].imageSource' :alt="homePageElements.decorativeElements[0].imageName"/>
+      <img 
+      :src='homePageElements.decorativeElements[0].imageSource' 
+      :alt="homePageElements.decorativeElements[0].imageName">
     </div>
     <div class="homepage-img-2">
-      <img :src='homePageElements.decorativeElements[1].imageSource' :alt="homePageElements.decorativeElements[1].imageName"/>
+      <img 
+      :src='homePageElements.decorativeElements[1].imageSource' 
+      :alt="homePageElements.decorativeElements[1].imageName">
     </div>
-    <div class="homepage-circle"></div>
     <div class="homepage-text__wrapper">
       <div class="homepage-text__name">
-        <span class="name">{{ homePageElements.authorOverallInfo.firstName }}</span>
-        <span class="name">{{ homePageElements.authorOverallInfo.lastName }}</span>
+        <span class="name">
+          {{ homePageElements.authorOverallInfo.firstName }}
+        </span>
+        <span class="name">
+          {{ homePageElements.authorOverallInfo.lastName }}
+        </span>
         <div class="title">
           {{ homePageElements.authorOverallInfo.title }}
         </div>
@@ -19,12 +26,14 @@
       <div class="homepage-text__intro">
         {{ homePageElements.authorOverallInfo.slogan }}
       </div>
-      <div class="homepage-text__btn">
-        <Button btnName="explore my works" :href="'/work'"/>
+      <div class="homepage-text__btn" v-for="button in homePageElements.buttons" :key="button.id">
+        <Button :btnName="button.buttonName" :href="button.buttonLink"/>
       </div>
     </div>
     <div class="homepage-img-3">
-      <img :src='homePageElements.decorativeElements[2].imageSource' :alt="homePageElements.decorativeElements[2].imageName"/>
+      <img 
+      :src='homePageElements.decorativeElements[2].imageSource' 
+      :alt="homePageElements.decorativeElements[2].imageName">
     </div>
   </div>
 </template>

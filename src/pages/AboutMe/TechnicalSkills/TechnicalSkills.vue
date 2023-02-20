@@ -37,6 +37,6 @@ export default {
         return {
             aboutMePageElements
         }
-    }
+    },
 }
 </script>
