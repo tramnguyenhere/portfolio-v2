@@ -15,6 +15,16 @@ export const workPageElements = {
     },
     {
       id: uuidv4(),
+      projectName: 'Personal Portfolio - verson 2.0',
+      projectImage: 'img/project-thumbnail/personal-portfolio-v2.png',
+      projectDescription:
+        '[Ongoing] Redesigned Personal Portfolio of a Frontend developer with Vue.js',
+      projectSourceCode: 'https://github.com/tramnguyenhere/portfolio-v2.git',
+      projectDemoLink: 'https://aspace-tramnguyenhere.netlify.app/',
+      technologiesUsed: ['html', 'javascript', 'vuejs', 'sass'],
+    },
+    {
+      id: uuidv4(),
       projectName: 'Wishlist - Christmas 2022 edition',
       projectImage: 'img/project-thumbnail/wishlist.png',
       projectDescription: 'Customized Wishlist application',

@@ -33,4 +33,9 @@ const router = createRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  document.title = to.name + '- Tram Nguyen Portfolio';
+  next();
+});
+
 export default router;
