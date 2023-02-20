@@ -25,8 +25,6 @@
     .contact__accounts {
         position: relative;
         font-family: $--theme-ui-font-cabin;
-        font-size: 100px;
-        font-weight: 400;
         display: flex;
         flex-direction: column;
         text-align: right;
@@ -35,6 +33,54 @@
         
         .contact__account {
             padding: 5px;
+            font-size: 100px;
+            font-weight: 400;
+            position: relative;
+            
+            .btn {
+                font-size: 100px;
+                font-weight: 400;
+                color: $--theme-ui-color-black;
+                text-decoration: none;
+                padding-right: 20px;
+                border: none;
+                background: none;
+                box-shadow: none;
+
+                &:hover {
+                    color: $--theme-ui-color-red;
+                }
+            }
+            
+            &::before{
+                position: absolute;
+                content: "";
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                transition: $--theme-transitiion;
+                }
+
+            &:hover {
+                text-decoration: underline;
+                color: $--theme-ui-color-red;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: -20%;
+                    top: 50%;
+                    display: block;
+                    border-left: 10px solid $--theme-ui-color-red;
+                    border-top: 10px solid $--theme-ui-color-red;
+                    width: 50px;
+                    height: 50px;
+                    float: right;
+                    transform: translate(50%, -50%) rotate(135deg);
+                }
+            }
         }
 
     }

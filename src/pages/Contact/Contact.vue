@@ -7,7 +7,7 @@
         </div>
         <div class="contact__accounts">
             <div class="contact__account" v-for="account in contactPageElements.accounts" :key="account.id">
-                {{ account.platform }}
+                <Button :href="account.address" target="_blank" :btnName="account.platform"/>
                 <i :class="account.platformIcon" />
             </div>
         </div>
@@ -19,13 +19,15 @@
 
 <script>
 import NavBar from '@/components/NavBar/NavBar.vue';
+import Button from '@/components/Button/Button.vue';
 import {contactPageElements} from '@/data/ContactPageElements.js'
 import './Contact.scss'
 
 export default {
     name: 'Contact',
     components: {
-        NavBar
+        NavBar,
+        Button
     },
     data () {
         return {
