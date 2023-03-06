@@ -20,7 +20,7 @@ export const workPageElements = {
       projectDescription:
         '[Ongoing] Redesigned Personal Portfolio of a Frontend developer with Vue.js',
       projectSourceCode: 'https://github.com/tramnguyenhere/portfolio-v2.git',
-      projectDemoLink: 'https://aspace-tramnguyenhere.netlify.app/',
+      projectDemoLink: 'https://tramnguyenhere-portfolio-v2.netlify.app/',
       technologiesUsed: ['html', 'javascript', 'vuejs', 'sass'],
     },
     {

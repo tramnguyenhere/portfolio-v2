@@ -13,7 +13,7 @@
 
 ### Demo:
 
-Feel free to experience the app from [https://tramnguyenhere-portfolio.netlify.app/](https://tramnguyenhere-portfolio.netlify.app/)
+Feel free to experience the app from [https://tramnguyenhere-portfolio-v2.netlify.app/](https://tramnguyenhere-portfolio-v2.netlify.app/)
 
 ### Install NodeJs and npm
 
@@ -39,5 +39,5 @@ You will also see any lint errors in the console.
 ## Technology use in the application
 
 - JavaScript
-- ReactJS
+- Vue.js
 - SASS
